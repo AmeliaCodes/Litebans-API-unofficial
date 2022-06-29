@@ -25,7 +25,7 @@ public class HistoryManager {
     }
 
     public List<Punishment> getBans(UUID uuid) {
-        List<Punishment> toReturn = new ArrayList<>();
+        List<Punishment> bans = new ArrayList<>();
         String query = "SELECT * FROM {bans} WHERE uuid=?";
         Database database = this.database;
 
@@ -34,7 +34,7 @@ public class HistoryManager {
                 st.setString(1, uuid.toString());
                 try (ResultSet rs = st.executeQuery()) {
                     while (rs.next()) {
-                        toReturn.add(new Punishment(
+                        bans.add(new Punishment(
                                 rs.getLong("id"),
                                 rs.getString("uuid"),
                                 rs.getString("ip"),
@@ -57,6 +57,6 @@ public class HistoryManager {
             }
         });
 
-        return toReturn;
+        return bans;
     }
 }
