@@ -18,3 +18,4 @@ public enum PunishmentType {
 
     private final boolean removable;
 }
+
