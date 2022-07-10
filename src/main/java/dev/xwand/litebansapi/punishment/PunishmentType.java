@@ -10,6 +10,7 @@ import lombok.Getter;
 @AllArgsConstructor
 
 public enum PunishmentType {
+
     BAN(true),
     MUTE(true),
     KICK(false),

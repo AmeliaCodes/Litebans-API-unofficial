@@ -40,7 +40,6 @@ public final class HistoryManager {
                 e.printStackTrace();
             }
         });
-
         return bans;
     }
 }

@@ -6,6 +6,7 @@ import litebans.api.Database;
 /**
  * @author xWand
  */
+
 public class LitebansAPI {
 
     private final HistoryManager historyManager;

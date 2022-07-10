@@ -48,3 +48,4 @@ public class Punishment {
         this.active = rs.getBoolean("active");
     }
 }
+
