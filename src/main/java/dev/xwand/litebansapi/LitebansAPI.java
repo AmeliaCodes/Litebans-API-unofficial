@@ -9,11 +9,12 @@ import litebans.api.Database;
 public class LitebansAPI {
 
     private final HistoryManager historyManager;
-    public LitebansAPI(Database database) {
-        historyManager = new HistoryManager(database);
+
+    public LitebansAPI(final Database database) {
+        this.historyManager = new HistoryManager(database);
     }
 
     public HistoryManager getHistoryManager() {
-        return historyManager;
+        return this.historyManager;
     }
 }
