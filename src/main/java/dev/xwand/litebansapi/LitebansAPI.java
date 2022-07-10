@@ -19,4 +19,3 @@ public class LitebansAPI {
         return this.historyManager;
     }
 }
-
