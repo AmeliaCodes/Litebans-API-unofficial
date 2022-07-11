@@ -8,7 +8,9 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
+
 public enum PunishmentType {
+
     BAN(true),
     MUTE(true),
     KICK(false),
